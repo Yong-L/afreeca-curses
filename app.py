@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import curses, json, urllib.request, urllib.parse, codecs, subprocess
 import logging
 from window import Window
