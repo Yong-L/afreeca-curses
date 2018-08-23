@@ -1,7 +1,3 @@
-"""
-Search API: http://sch.afreecatv.com/api.php?szKeyword=SEARCH_WORD&nListCnt=10
-"""
-
 import curses, json, urllib.request, urllib.parse, codecs, subprocess
 import logging
 from window import Window
@@ -34,9 +30,6 @@ def query_afreeca(query=""):
         return json.loads(res.decode('utf-8'))
 
 key = 0
-
-data = parse_top(query_afreeca())
-
 
 try:
     win = Window(stdscr)
